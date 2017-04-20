@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<p>Creating a JavaScript Triangle.</p>
+
+		<p id="hash"></p>
+
+		<script>
+			var hash = '';
+			for(i = 0; i<7; i++){
+				hash += '#';
+				var node = document.createElement("P");  // Create a Node              
+				var textnode = document.createTextNode(hash);  // Create a Text Node
+				node.appendChild(textnode); // Append text node 
+				document.getElementById("hash").appendChild(node); // display the result
+		 	}
+		 </script>
+	</body>
+</html>
